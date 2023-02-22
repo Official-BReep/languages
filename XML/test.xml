@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book category="story">
+        <title>Peter geht in den Wald</title>
+        <price>5.95</price>
+    </book>
+</bookstore>
