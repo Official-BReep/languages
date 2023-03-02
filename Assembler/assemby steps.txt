@@ -1,0 +1,23 @@
+save temps(to see assembler code): gcc -Wall -save-temps cexample.c -o cexample
+
+only generate assembler code: gcc -S cexample.c -o cexample2.s
+
+generate from assembler to runable exe: gcc -c cexample2.s -o cexample2.o => gcc cexample2.o -o cexample2
+
+
+1. Step | Replace Macros and include library > cexample.i
+
+2. Step | cexamples.s
+
+assembler code
+ 
+.file => Filename
+.ascii => define strings
+LFB10: => assembly code of main function in cexample.c
+.ident => Version and type of Compiler
+.cfi_startproc => start of the compiled code
+.cfi_endproc => end of the compiled code
+
+3. Step | Machine language (roof/template)
+
+4. Step | Linker (Make functional .exe)
